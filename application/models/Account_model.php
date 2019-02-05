@@ -8,11 +8,11 @@
     //API call - get a book record by isbn
     public function checkIfUserExist( $email, $password ) {  
 
-        $this->db->select('first_name, last_name, email_id, mobile_number');
+        $this->db->select('first_name, last_name, user_email, mobile_number');
 
         $this->db->from('_user_data');
 
-        $this->db->where('email_id',$email);
+        $this->db->where('user_email',$email);
         $this->db->where('password',$password);
 
         $query = $this->db->get();
@@ -40,7 +40,7 @@
 
     public function updateUserData( $emailId, $data ) {
     
-        $this->db->where('email_id', $emailId);
+        $this->db->where('user_email', $emailId);
         if($this->db->update('_user_data', $data)){
             return true;
         }

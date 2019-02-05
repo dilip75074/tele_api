@@ -16,7 +16,7 @@ class Account extends REST_Controller{
     //API - Check user if exist in our database
     function authenticateUser_post() {
 
-        $email  = $this->post('email_id');
+        $email  = $this->post('user_email');
         $password  = $this->post('password');
         
         if(!$email || !$password) {
@@ -46,7 +46,7 @@ class Account extends REST_Controller{
             'first_name' => $this->post('first_name'),
             'last_name' => $this->post('last_name'),
             'mobile_number' => $this->post('mobile_number'),
-            'email_id' => $this->post('email_id'),
+            'user_email' => $this->post('user_email'),
             'password' => $this->post('password')
         ];
 

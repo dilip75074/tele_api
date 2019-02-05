@@ -28,7 +28,7 @@
             <td><?php echo $row->country;?></td> 
             <td><?php echo $row->current_city;?></td> 
             <td><?php echo $row->mobile_number;?></td> 
-            <td><?php echo $row->email_id;?></td> 
+            <td><?php echo $row->user_email;?></td> 
             <td><?php echo $row->password;?></td> 
             <td><?php echo $row->doj;?></td> 
             </tr>  

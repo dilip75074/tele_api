@@ -76,9 +76,16 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
+
+	// Local:-
 	'username' => 'root',
 	'password' => '',
-	'database' => 'id7484001_telequiz_data',
+
+	// Remote:-
+	// 'username' => 'id8543295_telebix34354364dsdhru45',
+	// 'password' => 'telebix_dgsda_325_sdsghe',
+	
+	'database' => 'id8543295_telebix43859930434hdhdfj34634',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
